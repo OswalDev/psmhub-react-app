@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import CardMenu from "../../../../components/card/CardMenu";
+// import { db } from "services/firebase.config.ts";
 import { DiApple } from "react-icons/di";
 import { DiAndroid } from "react-icons/di";
 import { DiWindows } from "react-icons/di";
 import Card from "../../../../components/card";
-import Progress from "../../../../components/progress";
+// import Progress from "../../../../components/progress";
 
 import {
   createColumnHelper,
@@ -14,8 +15,8 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
-import { collection, getDocs } from "firebase/firestore";
-// import { db } from "../services/firebase.js"
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
+
 type RowObj = {
   code: string;
   subject: String;
@@ -128,22 +129,24 @@ function CheckTable(props: { tableData: any }) {
   ]; // eslint-disable-next-line
 
   // const [subjects, setSubjects] = useState({})
+  // async function fetchFirestoreData(collection: string, documentId: string) {
+  //   try {
+  //     const docRef = doc(db, collection, documentId);
+  //     const docSnap = await getDoc(docRef);    
+  //     if (docSnap.exists()) {
+  //       const data = docSnap.data();
+  //       console.log('Fetched data:', data);
+  //       return data;
+  //     } else {
+  //       console.log('Document does not exist!');
+  //       return null;    }
+  //   } catch (error) {
+  //       console.error('Error fetching Firestore data:', error);
+  //       throw error;
+  //     }
+  // }
 
-
-  // useEffect(()  => {
-  //   getDocs(collection(db, "subjects")).then((snapShot) => {
-  //     let updatedValue = {};
-  //     updatedValue ={"subject":"Matematica I"};
-  //     snapShot.forEach((doc) => {
-  //       console.log(doc.id, doc.data());
-  //       setSubjects( subjects => ({
-  //         ...subjects,
-  //         ...updatedValue
-  //       }));
-  //       // console.log(subjects)
-  //     })
-  //   })
-  // }, []);
+  // fetchFirestoreData("subjects", import.meta.env.VITE_FIREBASE_PROJECT_ID)
 
   const [data, setData] = React.useState(() => [...defaultData]);
   const table = useReactTable({

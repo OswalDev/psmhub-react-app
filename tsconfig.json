@@ -10,6 +10,7 @@
       "components/*": ["components/*", "components"],
       "variables/*": ["variables/*", "variables"] 
     },
+    "types": ["vite/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

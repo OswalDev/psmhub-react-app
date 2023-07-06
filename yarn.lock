@@ -1581,6 +1581,13 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.1.tgz#aa22750962f3bf0e79d753d3cc067f010c95f194"
   integrity sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==
 
+"@types/firebase@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@types/firebase/-/firebase-3.2.1.tgz#17c1c8fee7485ab09668d2461e34540bdf44b3b1"
+  integrity sha512-G8XgHMu2jHlElfc2xVNaYP50F0qrqeTCjgeG1v5b4SRwWG4XKC4fCuEdVZuZaMRmVygcnbRZBAo9O7RsDvmkGQ==
+  dependencies:
+    firebase "*"
+
 "@types/history@^4.7.11":
   version "4.7.11"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.11.tgz#56588b17ae8f50c53983a524fc3cc47437969d64"
@@ -2186,6 +2193,11 @@ dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.16.tgz#5a7429e6066eb3664d911e33fb0e45de8eb08453"
   integrity sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==
 
+dotenv@^16.3.1:
+  version "16.3.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
+
 electron-to-chromium@^1.4.431:
   version "1.4.440"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.440.tgz#d3b1eeb36b717eb479a240c0406ac1fa67901762"
@@ -2332,7 +2344,7 @@ find-root@^1.1.0:
   resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
   integrity sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==
 
-firebase@^9.21.0:
+firebase@*, firebase@^9.23.0:
   version "9.23.0"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.23.0.tgz#71fea60d704bfed8e92162911544fd6564a04d0e"
   integrity sha512-/4lUVY0lUvBDIaeY1q6dUYhS8Sd18Qb9CgWkPZICUo9IXpJNCEagfNZXBBFCkMTTN5L5gx2Hjr27y21a9NzUcA==
