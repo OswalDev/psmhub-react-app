@@ -1,7 +1,7 @@
 # psmhub-react-app
  excel-interpretation-react-app 
  
-#Development version
+# Development version
  v.2
 
-#How to run project
+# How to run project
